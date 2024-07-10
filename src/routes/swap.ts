@@ -25,8 +25,8 @@ router.get('/swap', async (ctx) => {
     String(ctx.query.tokenOut),
     String(ctx.query.amount),
     String(ctx.query.from),
-    Number(ctx.query.slippage),
-    Number(ctx.query.fee)
+    ctx.query.slippage,
+    ctx.query.fee
   )
 })
 
